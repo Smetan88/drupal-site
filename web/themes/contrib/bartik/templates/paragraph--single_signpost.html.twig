@@ -1,0 +1,29 @@
+{#
+  templates/paragraph--single_signpost.html.twig
+  Variables available:
+  - paragraph: The paragraph entity.
+#}
+
+<div class="multipost__content">
+  <div class="multipost__content-img">
+    <picture>
+      {% if content.field_desktop_image %}
+        <source media="(min-width: 769px)" srcset="{{ content.field_desktop_image['#items'].entity.uri.value }}" />
+      {% endif %}
+      {{ content.field_mobile_image }}
+    </picture>
+  </div>
+  <div class="multipost__content-text">
+    <p class="multipost__content-text--person">{{ content.field_author }}</p>
+    <h3 class="multipost__content-text--title">
+      {{ content.field_title_post }}
+    </h3>
+    <p class="multipost__content-text--description">
+      {{ content.field_description_post }}
+    </p>
+    {{ content.field_link }}
+    <p class="multipost__content-text--hint">
+      {{ content.field_hint_post }}
+    </p>
+  </div>
+</div>

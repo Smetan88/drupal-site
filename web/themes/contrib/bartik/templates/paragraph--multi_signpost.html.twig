@@ -1,0 +1,15 @@
+{#
+  templates/paragraph--multi_signpost.html.twig
+  Variables available:
+  - paragraph: The paragraph entity.
+#}
+
+<div class="multipost__title">
+    {% if content.field_title_choose %}
+        {% set tag = content.field_title_choose['#items'].0.value %}
+        <{{ tag|raw }}>{{ content.field_title|raw }}</{{ tag|raw }}>
+    {% endif %}
+</div>
+<div class="multipost__items">
+    {{ content.field_single_singpost }}
+</div>
