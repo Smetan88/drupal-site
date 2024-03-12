@@ -155,8 +155,19 @@ h4 {
   width: 19px;
   height: 19px;
   vertical-align: middle;
-  margin-left: 8px;
+  opacity: 0;
+  transition: all .3s;
 }
+
+.multipost__content-text a:hover::after,
+.cta:hover::after{
+  margin-left: 8px;
+  opacity: 1;
+  transition: all .3s;
+}
+
+
+
 .multipost__content-text--hint {
   position: absolute;
   padding: 20px;

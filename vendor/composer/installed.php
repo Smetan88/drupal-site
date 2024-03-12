@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/recommended-project',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '5c84a0e8174bf48886565f3f099e93b9ae33bf54',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -289,6 +289,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/field_formatter_class' => array(
+            'pretty_version' => '1.6.0',
+            'version' => '1.6.0.0',
+            'reference' => '8.x-1.6',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/field_formatter_class',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/layout_builder_restrictions' => array(
             'pretty_version' => '2.19.0',
             'version' => '2.19.0.0',
@@ -317,9 +326,9 @@
             'dev_requirement' => false,
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '5c84a0e8174bf48886565f3f099e93b9ae33bf54',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

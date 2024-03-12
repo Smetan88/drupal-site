@@ -202,3 +202,12 @@ function bartik_preprocess_image(&$variables) {
   $variables['attributes']['width'] = NULL;
   $variables['attributes']['height'] = NULL;
 }
+function bartik_preprocess_field(&$variables) {
+  if ($variables['element']['#field_name'] == 'field_link') {
+    foreach ($variables['items'] as &$item) {
+      if (isset($item['content']['#url'])) {
+        $item['content']['#url']->setOption('attributes', ['class' => ['cta']]);
+      }
+    }
+  }
+}
