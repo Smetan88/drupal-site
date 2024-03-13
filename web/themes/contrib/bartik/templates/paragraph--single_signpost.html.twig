@@ -6,10 +6,10 @@
 
 <div class="multipost__content">
   <div class="multipost__content-img">
-    <picture>
-      {% if content.field_desktop_image %}
-        <source media="(min-width: 769px)" srcset="{{ content.field_desktop_image['#items'].entity.uri.value }}" />
-      {% endif %}
+    <picture class="multipost__content-img--desktop">
+      {{ content.field_desktop_image }}
+    </picture>
+    <picture class="multipost__content-img--mobile">
       {{ content.field_mobile_image }}
     </picture>
   </div>
